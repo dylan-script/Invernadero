@@ -1,0 +1,32 @@
+*{
+    padding: auto;
+    margin:auto;
+}
+.login-view {
+  height: 550px;
+  background-color: #00a8ff;
+  margin-top: 6em;
+  font-size: 30px;
+  border: solid #000 1px;
+}
+.login-title {
+  justify-content: center;
+  display: flex;
+  border: solid #000 1px;
+}
+.login-body {
+  height: 457px;
+  border: solid #000 1px;  
+
+}
+.login-body form {
+  padding: auto;
+  height: 15em;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
+
+.login-body form[value ="Iniciar Sesión"]{
+    margin: 15px;
+}
