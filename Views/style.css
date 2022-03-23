@@ -3,30 +3,39 @@
     margin:auto;
 }
 .login-view {
-  height: 550px;
-  background-color: #00a8ff;
-  margin-top: 6em;
+  height: 500px;
+  background-color: #ececec;
+  margin-top: 2em;
   font-size: 30px;
+}
+.login-view_row{
   border: solid #000 1px;
 }
-.login-title {
-  justify-content: center;
-  display: flex;
-  border: solid #000 1px;
-}
+
 .login-body {
   height: 457px;
-  border: solid #000 1px;  
 
 }
 .login-body form {
+  text-align: center;
   padding: auto;
-  height: 15em;
   width: 50%;
-  border: 3px solid green;
   padding: 10px;
+  height: 15em;
 }
-
-.login-body form[value ="Iniciar Sesión"]{
-    margin: 15px;
+.login-body form label,
+.login-body form input{
+  margin: 20px;
+  display: inline-block;
+  
+}
+.button{
+  background-color: #00a8ff;
+  color: #f5f6fa;
+}
+.button:hover{
+   transition-duration: 1s;
+  background-color: #f5f6fa;
+  color: #000;
+  cursor: pointer;
 }
