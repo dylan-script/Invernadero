@@ -2,40 +2,48 @@
     padding: auto;
     margin:auto;
 }
-.login-view {
+.container-view {
   height: 500px;
   background-color: #ececec;
   margin-top: 2em;
   font-size: 30px;
 }
-.login-view_row{
+.title-view_row{
   border: solid #000 1px;
 }
 
-.login-body {
+.body-view {
   height: 457px;
 
 }
-.login-body form {
+.body-view form {
   text-align: center;
   padding: auto;
   width: 50%;
   padding: 10px;
   height: 15em;
 }
-.login-body form label,
-.login-body form input{
+.body-view form label,
+.body-view form input{
   margin: 20px;
   display: inline-block;
   
 }
+a:link{
+  text-decoration: none;
+}
 .button{
   background-color: #00a8ff;
   color: #f5f6fa;
+  border-radius: 2mm;
 }
 .button:hover{
    transition-duration: 1s;
   background-color: #f5f6fa;
   color: #000;
   cursor: pointer;
+}
+
+.row{
+  margin: 1em;
 }
