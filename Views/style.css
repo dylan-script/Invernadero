@@ -6,15 +6,14 @@
   height: 500px;
   background-color: #ececec;
   margin-top: 2em;
-  font-size: 30px;
+  font-size: 2em;
 }
 .title-view_row{
-  border: solid #000 1px;
+  border: solid #000 1px;  
 }
 
 .body-view {
   height: 457px;
-
 }
 .body-view form {
   text-align: center;
@@ -30,7 +29,7 @@
   
 }
 a:link{
-  text-decoration: none;
+  text-decoration: none; 
 }
 .button{
   background-color: #00a8ff;
@@ -43,7 +42,10 @@ a:link{
   color: #000;
   cursor: pointer;
 }
-
-.row{
+.menu{
   margin: 1em;
+}
+.menu button{
+  font-size: 1em;
+  height: 50px;
 }
