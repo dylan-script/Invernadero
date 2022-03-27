@@ -3,7 +3,7 @@
     margin:auto;
 }
 .container-view {
-  height: 500px;
+  height: 550px;
   background-color: #ececec;
   margin-top: 2em;
   font-size: 2em;
@@ -48,4 +48,18 @@ a:link{
 .menu button{
   font-size: 1em;
   height: 50px;
+}
+.table-opt{
+  margin: 5px;
+  font-size: 0.65em;
+}
+.table-back{
+  margin-left: 20px;
+}
+.dropdown-menu button{
+  text-align: center;
+}
+.data-table table{
+  margin-top: 20px;
+  font-size: small;
 }
