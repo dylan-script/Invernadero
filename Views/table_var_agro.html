@@ -22,36 +22,40 @@
         <div class="container-fluid body-view">
             <div class="row ">
                 <div class="col-10">
-                    <button type="button" class="btn btn-secondary btn-lg">Fecha</button>
-                    <div class="btn-group" role="group">
-                        <button id="btnGroupDrop1" type="button" class="table-opt btn btn-secondary dropdown-toggle"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Número de Cama
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                            <button class="dropdown-item">1</button>
-                            <button class="dropdown-item">2</button>
-                            <button class="dropdown-item">3</button>
-                            <button class="dropdown-item">4</button>
-                            <button class="dropdown-item">5</button>
-                            <button class="dropdown-item">6</button>
+                    <form action="" method="get">
+                        <label for="calendar">
+                            <span>Fecha:</span>
+                            <input class="table-opt btn btn-secondary" type="date" name="fecha" id="">
+                        </label>
+                        <div class="btn-group" role="group">
+                            <button id="btnGroupDrop1" type="button" class="table-opt btn btn-secondary dropdown-toggle"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Número de Cama
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                <button class="dropdown-item">1</button>
+                                <button class="dropdown-item">2</button>
+                                <button class="dropdown-item">3</button>
+                                <button class="dropdown-item">4</button>
+                                <button class="dropdown-item">5</button>
+                                <button class="dropdown-item">6</button>
+                            </div>
+                            <button id="btnGroupDrop1" type="button" class="table-opt btn btn-secondary dropdown-toggle"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Número de Plántula
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                <button class="dropdown-item">1</button>
+                                <button class="dropdown-item">2</button>
+                                <button class="dropdown-item">3</button>
+                                <button class="dropdown-item">4</button>
+                                <button class="dropdown-item">49</button>
+                                <button class="dropdown-item">50</button>
+                            </div>
                         </div>
-                        <button id="btnGroupDrop1" type="button" class="table-opt btn btn-secondary dropdown-toggle"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Número de Plántula
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                            <button class="dropdown-item">1</button>
-                            <button class="dropdown-item">2</button>
-                            <button class="dropdown-item">3</button>
-                            <button class="dropdown-item">4</button>
-                            <button class="dropdown-item">49</button>
-                            <button class="dropdown-item">50</button>
-                        </div>
-                    </div>
-                    <button type="button" class="table-back btn btn-primary btn-lg" data-toggle="modal"
-                        data-target="#ingresarDatos">Ingresar Datos</button>
-                    <button type="button" class="table-back btn btn-primary btn-lg"  data-toggle="modal" data-target="#funciones">Funciones</button>
+                        <input type="submit" class="table-opt btn btn-secondary" value="Buscar">
+                    </form>
+
 
                 </div>
             </div>
@@ -108,6 +112,11 @@
                 <div class="col-10">
                     <a href="/Views/MenuView.html"><button type="button"
                             class="btn btn-outline-primary">Regresar</button></a>
+                    <button type="button" class="table-back btn btn-outline-primary" data-toggle="modal"
+                        data-target="#ingresarDatos">Ingresar Datos</button>
+                    <button type="button" class="table-back btn btn-outline-primary" data-toggle="modal"
+                        data-target="#funciones">Funciones</button>
+
                 </div>
             </div>
         </div>
@@ -184,7 +193,7 @@
                     <div class="form-row">
                         <div class="form-group col-md-12">
                             <h1>Proximamente por definir!</h1>
-                            <button type="button" class="btn btn-secondary"  data-toggle="modal"
+                            <button type="button" class="btn btn-secondary" data-toggle="modal"
                                 data-target="#modificarDatos">Función 1</button>
                             <button type="button" id="Iniciar" class="btn btn-primary">Función 2</button>
                         </div>
@@ -206,7 +215,7 @@
                 <div class="modal-body">
                     <div class="form-row">
                         <div class="form-group col-md-12">
-                            <button type="button" class="btn btn-secondary"  data-toggle="modal"
+                            <button type="button" class="btn btn-secondary" data-toggle="modal"
                                 data-target="#modificarDatos">Modificar Datos</button>
                             <button type="button" id="Iniciar" class="btn btn-primary">Eliminar Registro</button>
                         </div>
