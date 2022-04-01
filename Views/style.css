@@ -3,8 +3,8 @@
     margin:auto;
 }
 .container-view {
-  height: 600px;
-  background-color: #ececec;
+  height: 800px;
+  background-color: #dcdde1;
   margin-top: 1em;
   font-size: 2em;
 }
@@ -13,7 +13,7 @@
 }
 
 .body-view {
-  height: 457px;
+  height: 800px;
 }
 .login-form {
   text-align: center;
@@ -24,7 +24,6 @@
 }
 .body-view form label,
 .body-view form input{
-  margin: 20px;
   display: inline-block;
   
 }
@@ -37,7 +36,7 @@ a:link{
   border-radius: 2mm;
 }
 .button:hover{
-   transition-duration: 1s;
+  transition-duration: 1s;
   background-color: #f5f6fa;
   color: #000;
   cursor: pointer;
@@ -49,9 +48,9 @@ a:link{
   font-size: 1em;
   height: 50px;
 }
-.table-opt{
-  margin: 5px;
-}
+/* .table-opt{
+  margin: 1px;
+} */
 .table-back{
   margin-left: 10px;
 }
@@ -65,4 +64,12 @@ a:link{
 
 span{
   font-size: 30px;
+}
+
+form input{
+  margin: 12px;
+}
+
+.simple{
+  height: 500px;
 }

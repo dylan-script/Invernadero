@@ -24,13 +24,17 @@
                 <div class="col-10">
                     <form action="" method="get">
                         <label for="calendar">
-                            <span>Fecha:</span>
+                            <span>Fecha Inicial:</span>
+                            <input class="table-opt btn btn-secondary" type="datetime-local" name="fecha" id="">
+                        </label>
+                        <label for="calendar">
+                            <span>Fecha Final:</span>
                             <input class="table-opt btn btn-secondary" type="datetime-local" name="fecha" id="">
                         </label>
                         <div class="btn-group" role="group">
                             <button id="btnGroupDrop1" type="button" class="table-opt btn btn-secondary dropdown-toggle"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Número de Cama
+                                Número de Instalación
                             </button>
                             <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
                                 <button class="dropdown-item">1</button>
@@ -54,45 +58,89 @@
                             <caption>Humedad del Sustrato</caption>
                             <thead>
                                 <tr>
+                                    <th scope="col">Instalación</th>
                                     <th scope="col">Fecha Hora</th>
-                                    <th scope="col">N° Cama</th>
-                                    <th scope="col">H1</th>
-                                    <th scope="col">H2</th>
-                                    <th scope="col">H3</th>
-                                    <th scope="col">H4</th>
-                                    <th scope="col">H5</th>
-                                    <th scope="col">H6</th>
+                                    <th scope="col">Humedad_1</th>
+                                    <th scope="col">Humedad_2</th>
+                                    <th scope="col">Humedad_3</th>
+                                    <th scope="col">Humedad_4</th>
+                                    <th scope="col">Humedad_5</th>
+                                    <th scope="col">Humedad_6</th>
+                                    <th scope="col">Promedio_1_2_3</th>
+                                    <th scope="col">Promedio_4_5_6</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr data-toggle="modal" data-target="#opciones">
-                                    <th scope="row">27/03/2022 19:44:35</th>
-                                    <td>1</td>
+                                    <th scope="row">1</th>
+                                    <td>27/03/2022 19:44:35</td>
                                     <td>24%</td>
                                     <td>0%</td>
                                     <td>42%</td>
                                     <td>76%</td>
                                     <td>65%</td>
                                     <td>59%</td>
+                                    <td>24%</td>
+                                    <td>59%</td>
                                 </tr>
                                 <tr data-toggle="modal" data-target="#opciones">
-                                    <th scope="row">27/03/2022 19:44:35</th>
-                                    <td>2</td>
+                                    <th scope="row">2</th>
+                                    <td>27/03/2022 19:44:35</td>
                                     <td>24%</td>
                                     <td>0%</td>
                                     <td>42%</td>
                                     <td>76%</td>
                                     <td>65%</td>
                                     <td>59%</td>
+                                    <td>24%</td>
+                                    <td>59%</td>
                                 </tr>
                                 <tr data-toggle="modal" data-target="#opciones">
-                                    <th scope="row">27/03/2022 19:44:35</th>
-                                    <td>3</td>
+                                    <th scope="row">3</th>
+                                    <td>27/03/2022 19:44:35</td>
                                     <td>24%</td>
                                     <td>0%</td>
                                     <td>42%</td>
                                     <td>76%</td>
                                     <td>65%</td>
+                                    <td>59%</td>
+                                    <td>24%</td>
+                                    <td>59%</td>
+                                </tr>
+                                <tr data-toggle="modal" data-target="#opciones">
+                                    <th scope="row">4</th>
+                                    <td>27/03/2022 19:44:35</td>
+                                    <td>24%</td>
+                                    <td>0%</td>
+                                    <td>42%</td>
+                                    <td>76%</td>
+                                    <td>65%</td>
+                                    <td>59%</td>
+                                    <td>24%</td>
+                                    <td>59%</td>
+                                </tr>
+                                <tr data-toggle="modal" data-target="#opciones">
+                                    <th scope="row">5</th>
+                                    <td>27/03/2022 19:44:35</td>
+                                    <td>24%</td>
+                                    <td>0%</td>
+                                    <td>42%</td>
+                                    <td>76%</td>
+                                    <td>65%</td>
+                                    <td>59%</td>
+                                    <td>24%</td>
+                                    <td>59%</td>
+                                </tr>
+                                <tr data-toggle="modal" data-target="#opciones">
+                                    <th scope="row">6</th>
+                                    <td>27/03/2022 19:44:35</td>
+                                    <td>24%</td>
+                                    <td>0%</td>
+                                    <td>42%</td>
+                                    <td>76%</td>
+                                    <td>65%</td>
+                                    <td>59%</td>
+                                    <td>24%</td>
                                     <td>59%</td>
                                 </tr>
                             </tbody>
