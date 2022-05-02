@@ -1,6 +1,5 @@
 <?php
 include('config.php');
-//$sql = "SELECT height.Date, beds.ID, plants.ID, height.Value, diameter.Value, num_sheets.Value, aphidoidea.Value FROM beds, plants, height, diameter, num_sheets, aphidoidea WHERE plants.ID_Bed = beds.ID && plants.ID = height.ID_Plant && plants.ID = diameter.ID_Plant && plants.ID = num_sheets.ID_Plant && plants.ID = aphidoidea.ID_Plant;";
 $sql = "SELECT height.Date AS 'Fecha', beds.ID as 'Cama', plants.ID AS 'Plántula', height.Value AS 'Altura', diameter.Value AS 'Diámetro', num_sheets.Value AS 'Número de Hojas', aphidoidea.Value AS 'Áfidos' FROM beds, plants, height, diameter, num_sheets, aphidoidea WHERE plants.ID_Bed = beds.ID && plants.ID = height.ID_Plant && plants.ID = diameter.ID_Plant && plants.ID = num_sheets.ID_Plant && plants.ID = aphidoidea.ID_Plant  LIMIT 10;";
 $result = mysqli_query($db,$sql);
 echo "Returned rows are: " . mysqli_num_rows($result) . '<br>';
@@ -14,9 +13,15 @@ echo "Returned rows are: " . mysqli_num_rows($result) . '<br>';
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="alertify/css/themes/default.css">
+        <link rel="stylesheet" href="alertify/css/alertify.css">
+        <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="functions.js"></script>
+        <script src="jQuery.js"></script>
+        <script src="bootstrap/dist/js/bootstrap.js"></script>
     <title>Variables Agronómicas</title>
 
 </head>
@@ -107,13 +112,13 @@ echo "Returned rows are: " . mysqli_num_rows($result) . '<br>';
                 <div class="col-10">
                     <a href="MenuView.php"><button type="button"
                             class="btn btn-outline-primary">Regresar</button></a>
-                    <button type="button" class="table-back btn btn-outline-primary" data-toggle="modal"
-                        data-target="#ingresarDatos">Ingresar Datos</button>
-                        <button type="button" class="table-back btn btn-outline-primary" data-toggle="modal"
-                        data-target="#opciones">Modificar Datos</button>
+                        <!-- <button type="button" class="table-back btn btn-outline-primary" data-toggle="modal"
+                        data-target="#ingresarDatos">Ingresar Datos</button> -->
+                        <!-- <button type="button" class="table-back btn btn-outline-primary" data-toggle="modal"
+                        data-target="#opciones">Modificar Datos</button> -->
                 
-                        <button type="button" class="table-back btn btn-outline-primary" data-toggle="modal"
-                        data-target="#funciones">Funciones</button>
+                        <!-- <button type="button" class="table-back btn btn-outline-primary" data-toggle="modal"
+                        data-target="#funciones">Funciones</button> -->
 
                 </div>
             </div>
@@ -121,7 +126,7 @@ echo "Returned rows are: " . mysqli_num_rows($result) . '<br>';
     </div>
     <!-- Modal Ingresar Datos -->
     <div class="modal fade" id="ingresarDatos" tabindex="-1" aria-labelledby="exampleModalLabe2" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-sm">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Ingresar Datos</h5>
@@ -133,44 +138,44 @@ echo "Returned rows are: " . mysqli_num_rows($result) . '<br>';
                     <div class="form-row">
                         <div class="form-group col-md-12">
                             <label>N° de Cama:</label>
-                            <input type="text" id="usuario" class="form-control" placeholder="">
+                            <input type="text" id="cama" class="form-control input-sm" placeholder="">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-12">
                             <label>N° Plántula:</label>
-                            <input type="text" id="usuario" class="form-control" placeholder="">
+                            <input type="text" id="planta"  class="form-control input-sm" placeholder="">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-12">
                             <label>Altura:</label>
-                            <input type="text" id="usuario" class="form-control" placeholder="">
+                            <input type="text" id="altura"  class="form-control input-sm" placeholder="">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-12">
                             <label>Diámetro:</label>
-                            <input type="text" id="usuario" class="form-control" placeholder="">
+                            <input type="text" id="diametro"  class="form-control input-sm" placeholder="">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-12">
                             <label>N° Hojas:</label>
-                            <input type="text" id="usuario" class="form-control" placeholder="">
+                            <input type="text" id="hojas" class="form-control input-sm" placeholder="">
                         </div>
                     </div>
 
                     <div class="form-row">
                         <div class="form-group col-md-12">
                             <label>N° Áfidos</label>
-                            <input type="text" id="pass" class="form-control" placeholder="">
+                            <input type="text" id="afidos" class="form-control input-sm" placeholder="">
                         </div>
                     </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                    <button type="button" id="Iniciar" class="btn btn-primary">Aceptar</button>
+                    <button type="button" id="guardarNuevo" class="btn btn-primary">Aceptar</button>
                 </div>
             </div>
         </div>
@@ -290,6 +295,20 @@ echo "Returned rows are: " . mysqli_num_rows($result) . '<br>';
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('guardarNuevo').click(function(){
+                    cama = $('#cama').val();
+                    planta = $('#planta').val();
+                    altura = $('#altura').val();
+                    diametro = $('#diametro').val();
+                    hojas = $('#hojas').val();
+                    afidos = $('#afidos').val();
+                    agregarDatos(cama, planta, altura, diametro, hojas, afidos);
+
+                })
+            });
+        </script>
 </body>
 
 </html>

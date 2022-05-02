@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="style.css">
     <title>Humedad del Sustrato</title>
 
 </head>
@@ -24,13 +25,13 @@
                 <div class="col-10">
                     <form action="" method="get">
                         <label for="calendar">
-                            <span>Fecha Inicial:</span>
+                            <span>Fecha:</span>
                             <input class="table-opt btn btn-secondary" type="datetime-local" name="fecha" id="">
                         </label>
-                        <label for="calendar">
+                        <!-- <label for="calendar">
                             <span>Fecha Final:</span>
                             <input class="table-opt btn btn-secondary" type="datetime-local" name="fecha" id="">
-                        </label>
+                        </label> -->
                         <div class="btn-group" role="group">
                             <button id="btnGroupDrop1" type="button" class="table-opt btn btn-secondary dropdown-toggle"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -152,8 +153,8 @@
                 <div class="col-10">
                     <a href="MenuView.php"><button type="button"
                             class="btn btn-outline-primary">Regresar</button></a>
-                <button type="button" class="table-back btn btn-outline-primary" data-toggle="modal"
-                        data-target="#funciones">Funciones</button>
+                <!-- <button type="button" class="table-back btn btn-outline-primary" data-toggle="modal"
+                        data-target="#funciones">Funciones</button> -->
 
                 </div>
             </div>
