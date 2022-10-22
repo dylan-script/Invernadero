@@ -1,0 +1,75 @@
+*{
+    padding: auto;
+    margin:auto;
+}
+.container-view {
+  height: 800px;
+  background-color: #dcdde1;
+  margin-top: 1em;
+  font-size: 2em;
+}
+.title-view_row{
+  border: solid #000 1px;  
+}
+
+.body-view {
+  height: 800px;
+}
+.login-form {
+  text-align: center;
+  padding: auto;
+  width: 50%;
+  padding: 10px;
+  height: 15em;
+}
+.body-view form label,
+.body-view form input{
+  display: inline-block;
+  
+}
+a:link{
+  text-decoration: none; 
+}
+.button{
+  background-color: #00a8ff;
+  color: #f5f6fa;
+  border-radius: 2mm;
+}
+.button:hover{
+  transition-duration: 1s;
+  background-color: #f5f6fa;
+  color: #000;
+  cursor: pointer;
+}
+.menu{
+  margin: 1em;
+}
+.menu button{
+  font-size: 1em;
+  height: 50px;
+}
+/* .table-opt{
+  margin: 1px;
+} */
+.table-back{
+  margin-left: 10px;
+}
+.dropdown-menu button{
+  text-align: center;
+}
+.data-table table{
+  margin-top: 20px;
+  font-size: small;
+}
+
+span{
+  font-size: 30px;
+}
+
+form input{
+  margin: 12px;
+}
+
+.simple{
+  height: 500px;
+}
