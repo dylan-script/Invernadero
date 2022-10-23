@@ -14,7 +14,7 @@ export const getResultSensors = async (req, res) => {
 export const getResultSensor = async (req, res) => {
   try {
     //console.log(req.params.id);
-    const [rows] = await pool.query('SELECT * FROM results_sen WHERE id = ?', req.params.id)
+    const [rows] = await pool.query('SELECT * FROM results_sen WHERE id_result = ?', req.params.id)
     //console.log(rows)
 
     if (rows.length <= 0) return res.status(404).json({
